@@ -6,6 +6,7 @@ case class Sum(e1: Expr, e2: Expr) extends Expr
 
 object PatternMatching extends App {
 
+  //eliminates type tests and casts
   def show(e: Expr): String = e match {
       case Number(n) => n.toString
       case Sum(l, r) => show(l) + " + " + show(r)
