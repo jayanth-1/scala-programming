@@ -28,9 +28,9 @@ Some key features of scala
     Rich collection set
     Higher order function
     Pattern matching
+    Immutability
     require(expression, message) is used as a precondition statement
     Constructor can be overloaded by using this(...) method
-    Immutability
 
 Differences from java
 
