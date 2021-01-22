@@ -6,15 +6,18 @@ object HigherOrderFunctions extends App {
   def sumInts(a: Int, b: Int): Int =
     if(a > b) 0 else a + sumInts(a+1,b)
 
+  //sum of cubes between a and b
+  def sumCubes(a: Int, b: Int): Int =
+    if(a > b) 0 else cube(a) + sumCubes(a+1, b)
+
+  println(sumInts(1,5))
+  println(sumCubes(1,5))
+
   //function to calculate cube
   def cube(i: Int): Int =
     i*i*i
 
   def id(i: Int): Int = i
-
-  //sum of cubes between a and b
-  def sumCubes(a: Int, b: Int): Int =
-    if(a > b) 0 else cube(a) + sumCubes(a+1, b)
 
   def sum(f: Int => Int, a: Int, b: Int): Int =
     if (a>b) 0 else f(a) + sum(f,a+1,b)
@@ -27,7 +30,7 @@ object HigherOrderFunctions extends App {
 
   println(res1,res2)
 
-  //with anonymous functions
+  //with anonymous functions we can write sums in a shorter way
   res1 = sum(i => i, 5, 10)
   res2 = sum(i => i*i*i, 5, 10)
 
