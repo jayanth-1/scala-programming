@@ -104,12 +104,12 @@ Two principle forms of polymorphism
 
 Pattern Matching
 
-Pattern matching is a generalization of switch from C/Java to class hierarchies
-Patterns are constructed from:
-  -> constructors e.g. Number, sum
-  -> variables e.g. n, e1, e2
-  -> wildcard patterns _,
-  -> constants, e.g. 1,true
+Pattern matching is a generalization of switch from C/Java to class hierarchies.Patterns are constructed from:
+
+    constructors e.g. Number, sum
+    variables e.g. n, e1, e2
+    wildcard patterns _,
+    constants, e.g. 1,true
 
 Collections
 
