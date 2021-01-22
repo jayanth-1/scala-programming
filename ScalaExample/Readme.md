@@ -6,6 +6,7 @@ Functional Programming Principles in Scala
     Tail Recursion
     Higher Order functions
     Anonymous Functions
+    Currying
     Operator Precedence
     Polymorphism
     Pattern Matching
@@ -49,7 +50,7 @@ Scala generally uses call by value. Call by value is exponentially efficient tha
 
 Tail Recursion
 
-If a function call itself as its last action, the function's stack frame can be reused. It's called tail recursion.
+If a function call itself as its last action, the function's stack frame can be reused. It's called tail recursion.There is no need to keep record of the previous state.
 Tail recursive functions are iterative process
 Interest of tail recursion is mostly to avoid very deep recursive chains
 Most instance of JVM, limit the maximal depth of recursion to couple of thousand stack frames. If input data is such that these deep recursive chains could happen. In that case it's a good idea to reformulate function into tail recursive to avoid stackoverflow exception
@@ -65,6 +66,10 @@ Anonymous Functions
 Passing functions as parameters leads to creation of many small functions.Sometimes it is tedious to have to define these functions using def.
 Compare to strings, we don't need to define a string using def, because strings exist as literals. Similarly we would like function literals,
 which let us write a function without giving it a name. These are called anonymous functions.
+
+Currying
+
+Currying is the process of converting a function with multiple arguments into a sequence of functions that take one argument. Each function returns another function that consumes the following argument.
 
 Operator Precedence
 
@@ -100,8 +105,8 @@ Patterns are constructed from:
 
 Collections
 
-Lists
-Maps
+    Lists
+    Maps
 Both are immutable
 
 Scala's immutable collections are:
@@ -112,6 +117,7 @@ fast: collection ops are tuned, can be parallelized
 universal: one vocabulary to work on all kinds of collections
 
 
+Functional Program Design in Scala
 
 Maps are also functions from keys to values
 
