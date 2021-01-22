@@ -20,6 +20,18 @@ Type safe
 It eliminates boiler plate code.
 Avoids mutations.
 
+Some key features of scala
+    
+    Type inference
+    Lazy computation
+    Singleton object
+    Rich collection set
+    Higher order function
+    Pattern matching
+    require(expression, message) is used as a precondition statement
+    Constructor can be overloaded by using this(...) method
+    Immutability
+
 Differences from java
 
 Classes
@@ -33,11 +45,6 @@ Traits are like interfaces in java but it can also method implementation.
 Objects
 
 Objects are like classes in java. There is only one single instance. It is not possible to create instances of objects. We can access fields or methods by object name.
-
-Sbt(Scala build tools)
-
-It compiles and run scala code.
-
 
 Evaluation Strategies
 Call by value
