@@ -98,8 +98,9 @@ Polymorphism
 Polymorphism means that a function type comes "in many forms"
 In programming it means function can be applied to arguments of many types
 Two principle forms of polymorphism
-subtyping: instance of a subclass can be passed to a base class
-generics: instances of a function or class are created by type paramaterization
+
+    subtyping: instance of a subclass can be passed to a base class
+    generics: instances of a function or class are created by type paramaterization
 
 Pattern Matching
 
@@ -117,11 +118,12 @@ Collections
 Both are immutable
 
 Scala's immutable collections are:
-easy to use: few steps to do the job
-concise: one word replaces a whole loop
-safe: type checker is really good at catching errors
-fast: collection ops are tuned, can be parallelized
-universal: one vocabulary to work on all kinds of collections
+
+    easy to use: few steps to do the job
+    concise: one word replaces a whole loop
+    safe: type checker is really good at catching errors
+    fast: collection ops are tuned, can be parallelized
+    universal: one vocabulary to work on all kinds of collections
 
 
 Functional Program Design in Scala
